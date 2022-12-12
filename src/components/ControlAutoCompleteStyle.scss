@@ -1,0 +1,37 @@
+.autocomplete {
+    display: flex;
+    &__container {
+        width: 45vw;
+        height: 40px;
+        margin-right: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aquamarine;
+        background: rgba(0, 117, 255, 0.3);
+        box-shadow: 0 8px 32px 0 rgba(2, 2, 3, 0.37);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        input {
+            background: none;
+            border: none;
+            width: 100%;
+            padding:0 25px;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
+@media screen  and (max-width:768px){ 
+    .autocomplete {
+        &__container {
+            width: 85vw;
+            margin-bottom: 200px;
+        }
+        flex-direction: column;
+    }
+}

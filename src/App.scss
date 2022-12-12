@@ -1,0 +1,14 @@
+body{
+    background-color: #fefaff;
+}
+.app{
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 99vw;
+        height: 100vh;
+        
+    }
+}
